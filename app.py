@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 data = pd.read_csv("data.csv", on_bad_lines = "skip")
 data.dropna(inplace=True)
-with open('pickle/model.pkl', 'rb') as file1:
+with open('model.pkl', 'rb') as file1:
     model = pickle.load(file1)
 
 def word(password):
